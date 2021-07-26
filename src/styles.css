@@ -1,0 +1,81 @@
+/* ----- TEXT POSITION ----- */
+.center{
+    text-align: center;
+}
+
+/* ----- BUTTON ----- */
+.btn-width{
+    min-width: 150px !important;
+}
+/* ----- MARGINS -----*/
+.visualizer{
+    display:block;
+    margin: auto;
+    background-color: rgba(116, 50, 152, 0.197)
+}
+
+.visualizer:hover .bar-group{
+    opacity: 0.5;
+}
+
+.visualizer .bar-group:hover{
+    opacity: 1;
+}
+/* ----- FLEX -----*/
+.flex{
+    display: flex !important;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-even{
+    justify-content: space-evenly;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+/* ----- VISUALIZER -----*/
+
+.bar-color{
+    fill: #d899dc;
+}
+
+.bar-color-select{
+    fill: #8A89C0;
+}
+
+.bar-color-done{
+    fill: #54C6EB;
+    animation: done 2s;
+}
+
+.bar-color-current{
+    fill: #06D6A0;
+}
+
+.bar-color-pivot{
+    fill: #048A81;
+}
+
+
+@keyframes done{
+    0%{ fill: white}
+    25%{ fill:#c2e2ec}
+    50%{ fill: #9fdaee}
+    75%{ fill: #72d0f0}
+    100%{ fill: #54C6EB}
+
+}
+
+.visualizer .bar-group .flip{
+    display: none;
+    transform: rotate(-90deg) scaleY(-1);
+}
+
+.visualizer .bar-group:hover .flip{
+    display:block;
+}
