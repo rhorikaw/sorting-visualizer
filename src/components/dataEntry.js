@@ -1,8 +1,8 @@
 import React from 'react';
-import TextField from '@material-ui/core/TextField';
-import MenuItem from '@material-ui/core/MenuItem';
-import Button from '@material-ui/core/Button';
-import { Container } from '@material-ui/core';
+import TextField from '@mui/material/TextField' //'@material-ui/core/TextField';
+import MenuItem from '@mui/material/MenuItem'   //'@material-ui/core/MenuItem';
+import Button from '@mui/material/Button'       //'@material-ui/core/Button';
+import Container from '@mui/material/Container' //'@material-ui/core';
 
 import "../styles.css";
 
@@ -68,23 +68,23 @@ const algorithms = [
 
   const speeds = [
     {
-        value: 320,
+        value: 160,
         label: 'Slowest'
     },
     {
-        value: 160,
+        value: 80,
         label: 'Slow'
     },
     {
-        value: 80,
+        value: 40,
         label: 'Normal'
     },
     {
-        value: 40,
+        value: 20,
         label: 'Fast'
     },
     {
-        value: 20,
+        value: 10,
         label: 'Fastest'
     },
   ];

@@ -15,12 +15,15 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@material-ui/core": "^4.12.1",
-    "gatsby": "^3.9.1",
-    "gatsby-plugin-gatsby-cloud": "^2.9.1",
-    "react": "^17.0.1",
-    "react-bootstrap": "^1.6.1",
-    "react-dom": "^17.0.1",
-    "styled-components": "^5.3.0"
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/material": "^5.15.15",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "gatsby": "^5.13.4",
+    "gatsby-plugin-gatsby-cloud": "^5.13.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.8"
   }
 }

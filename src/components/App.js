@@ -1,6 +1,6 @@
 import DataInput from "./dataEntry";
-import Button from '@material-ui/core/Button'
-import { Container } from '@material-ui/core';
+import Button from '@mui/material/Button'       //'@material-ui/core/Button'
+import Container from '@mui/material/Container' //'@material-ui/core';
 
 // Algorithms
 import selectionSort from "../algorithms/SelectionSort";
@@ -15,7 +15,6 @@ import gnomeSort from "../algorithms/GnomeSort";
 
 
 import React from 'react';
-// import { Container } from '@material-ui/core';
 
 import "../styles.css";
 
@@ -502,7 +501,7 @@ class App extends React.Component{
                         <Container maxWidth='lg'>
                             <h2 className="center">Simulate Sorting</h2>
                             <br></br>
-                            <svg className="flex flex-center visualizer" width="85%" height="500px" transform="scale(1,-1)" >
+                            <svg className="flex flex-center visualizer" width="91%" height="500px" transform="scale(1,-1)" >
                                 {generateListFromString(this.state.values).map((value, index) => (
                                     <g className="bar-group" transform={`translate( ${(index+ offset)*barHeight}, 0)`}>
                                         <BarGroup id={`bar-${index}`} data={value} barHeight={barHeight}/>
